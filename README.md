@@ -3,6 +3,10 @@ Realize all logic gates with single perceptron model.
 
 Test accuracy - After weights have been trained for all 4 possible cases then rerun the inputs to see if the prediction is correct.
 
+Circuit 
+
+![VisualRepOfCode](https://user-images.githubusercontent.com/56049621/66345404-e0abb080-e904-11e9-8f63-d288cdf7cfa3.PNG)
+
 AND Gate
 
 ![ANDOutput](https://user-images.githubusercontent.com/56049621/66228932-8822ac00-e695-11e9-98ef-1048ae32051a.png)
@@ -40,3 +44,9 @@ XNOR Gate
 Accuracy is 75%
 
 So we see that with the single perceptron training for the linear separation individually for each input isnt able to pass the accuracy test with 100% accuracy for OR, AND, NAND and NOR gates and atleast 75% accuracy for XOR and XNOR gates.
+
+Behavioral Analysis 
+
+![BehavioralPlot](https://user-images.githubusercontent.com/56049621/66345493-0933aa80-e905-11e9-92cc-0bfe45495de7.PNG)
+
+Weights need to be trained in parallel with all the inputs such that the learning from each datapoint isnt overwritten.
